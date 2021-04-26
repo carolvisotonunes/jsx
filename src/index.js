@@ -5,6 +5,11 @@ import ReactDOM from "react-dom";
 if (module.hot) {
   module.hot.accept();
 }
+
+function getButtonText() {
+  return "Click on me!";
+}
+
 // Create a react component
 const App = () => {
   return (
@@ -14,7 +19,7 @@ const App = () => {
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "red", color: "yellow" }}>
-        Submit
+         {getButtonText()}
       </button>
     </div>
   );
