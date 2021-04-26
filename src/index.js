@@ -6,20 +6,19 @@ if (module.hot) {
   module.hot.accept();
 }
 
-function getButtonText() {
-  return "Click on me!";
-}
+  const buttonText = { text: 'Click me' };
+  const labelText = 'Enter name:';
 
 // Create a react component
 const App = () => {
   return (
     <div>
       <label className="label" for="name">
-        Enter name:
+         {labelText}
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "red", color: "yellow" }}>
-         {getButtonText()}
+         {buttonText.text}
       </button>
     </div>
   );
